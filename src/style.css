@@ -1,0 +1,257 @@
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+.navbar {
+    background: #ffffff;
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.navbar-logo {
+    width: 14%;
+    height: 55px;
+    margin-right: 20px;
+}
+
+@media screen and (max-width:768px) {
+    .navbar-logo {
+        width: 45%;
+        height: 55px;
+        /* margin-right: 15px; */
+    }
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+
+}
+
+.navbar-links li {
+    display: inline;
+}
+
+.navbar-links a {
+    color: #5f5f5f;
+    text-decoration: none;
+    padding: 8px 16px;
+    font-size: 1.5rem;
+}
+
+.navbar-links a:hover {
+    color: #31ab7b;
+
+}
+
+.hamburger {
+    display: none; /* Hidden by default */
+    cursor: pointer;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none; 
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #333;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .navbar-links.active {
+        display: flex; 
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+
+
+
+
+
+
+
+
+.background {
+    background: #e15e36 url(https://ome.tv/images/bg.webp) 0 0 / 100rem;
+    padding-top: 2.6rem;
+}
+.heading{
+    margin-bottom: 2.65rem;
+    font-size: 3.5rem;
+    line-height: 1;
+    text-align: center;
+    font-weight: 500;      
+}
+@media screen and (max-width:992px) {
+    .heading{
+        margin-bottom: 2rem;
+        font-size: 2.5rem;
+        line-height: 1;
+        text-align: center;
+        font-weight: 500;      
+    }
+}
+
+.text-color{
+    color: #fff;      
+}
+.font-family{
+    font-family: Amaranth; 
+}
+.small-head{
+    margin-bottom: 3.5rem;
+    line-height: 1;
+}
+.section1 {
+    padding-left: 4.5rem;
+}
+@media screen and (max-width:992px) {
+    .section1{        
+        padding: 1.5rem;  
+    } 
+}
+.section3 {
+    padding-right: 4.5rem;
+}
+
+@media screen and (max-width:992px) {
+    .section3{        
+        padding: 1.5rem;  
+    } 
+}
+.phone {
+    width: 18rem;
+    height: 34.2rem;
+    position: relative;
+    /* margin: 0 3.2rem; */
+}
+
+@media screen and (max-width:992px) {
+    .phone {        
+        height: 34.2rem;
+        position: relative;       
+    }
+
+}
+
+@media screen and (max-width:1200px) {
+    .phone {
+        margin: 0 1.2rem;
+    }
+
+}
+
+@media screen and (min-width:1400px) {
+    .phone {
+        margin: 0 5.5rem;
+    }
+
+}
+
+.phone .stream {
+    position: absolute;
+    top: 6%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+.phone>.stream>video {
+    width: 100% !important;
+    height: 100% !important;
+    padding: 0 !important;
+}
+
+.phone .poster {
+    background: url(https://ome.tv/images/poster.jpg) no-repeat;
+    position: absolute;
+    top: 6.87%;
+    left: 5.044%;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+}
+
+@media screen and (max-width:1200px) {
+    .phone .poster {
+        top: 6%;
+        left: 5.4%;
+        width: 90%;
+        height: 90%;
+        background-size: contain;
+
+    }
+
+}
+
+.phone .frame {
+    background: url(https://ome.tv/images/random-chat-iphone-bg.svg) no-repeat;
+    position: absolute;
+    top: 0;
+    width: 110%;
+    height: 109%;
+}
+
+@media screen and (max-width:1200px) {
+    .phone .frame {
+        width: 100%;
+        height: 98%;
+    }
+}
+
+.phone .play {
+    background: transparent url(https://ome.tv/images/button-play.svg) no-repeat center;
+    border: none;
+    outline: none;
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+.phone button {
+    position: absolute;
+    top: 6%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
